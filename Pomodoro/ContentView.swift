@@ -159,7 +159,14 @@ struct ContentView: View {
                     self.progress += 1
                 }
                 
-                self.minutes -= 0.3
+                if self.minutes != 0 {
+                    self.minutes -= 0.3
+                }
+                
+                if self.minutes == 0 {
+                    self.run = false
+                    self.minutes = 360.0
+                }
             }
             if self.progress == 200 {
                 self.progress = 0
