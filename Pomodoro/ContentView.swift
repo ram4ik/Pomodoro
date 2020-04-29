@@ -10,8 +10,8 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var haptic = false
-    @State private var sound = false
+    @State private var haptic = UserDefaults.standard.bool(forKey: "Haptic")
+    @State private var sound = UserDefaults.standard.bool(forKey: "Sound")
     
     @State private var progress: CGFloat = 0
     @State private var run = false
@@ -95,12 +95,14 @@ struct ContentView: View {
                         .contextMenu {
                             Button(action: {
                                 self.haptic.toggle()
+                                UserDefaults.standard.set(self.haptic, forKey: "Haptic")
                             }) {
                                 Text("Haptic feedback")
                                 Image(systemName: self.haptic ? "checkmark.circle" : "xmark.circle")
                             }
                             Button(action: {
                                 self.sound.toggle()
+                                UserDefaults.standard.set(self.sound, forKey: "Sound")
                             }) {
                                 Text("Sound feedback")
                                 Image(systemName: self.sound ? "checkmark.circle" : "xmark.circle")
