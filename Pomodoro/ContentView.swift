@@ -157,7 +157,7 @@ struct ContentView: View {
     func updateTimer(_ currentTime: Date) {
         if self.run {
             withAnimation(Animation.default.speed(0.55)) {
-                if self.progress != 200 {
+                if self.progress != 200 && self.minutes != 0 {
                     self.progress += 1
                 }
                 
@@ -165,9 +165,10 @@ struct ContentView: View {
                     self.minutes -= 0.3
                 }
                 
-                if self.minutes == 0 {
+                if self.minutes <= 0 {
                     self.run = false
                     self.minutes = 360.0
+                    self.progress = 0
                     playSound(sound: "Bang, bell and fall", type: "wav")
                     haptics.notificationOccurred(.error)
                 }
