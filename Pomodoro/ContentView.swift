@@ -145,6 +145,8 @@ struct ContentView: View {
                 Spacer()
             }
         }.onReceive(timer, perform: updateTimer)
+        .onAppear { UIApplication.shared.isIdleTimerDisabled = true }
+        .onDisappear { UIApplication.shared.isIdleTimerDisabled = false }
     }
     
     func setProgress() -> CGFloat {
@@ -167,6 +169,7 @@ struct ContentView: View {
                     self.run = false
                     self.minutes = 360.0
                     playSound(sound: "Bang, bell and fall", type: "wav")
+                    haptics.notificationOccurred(.error)
                 }
             }
             if self.progress == 200 {

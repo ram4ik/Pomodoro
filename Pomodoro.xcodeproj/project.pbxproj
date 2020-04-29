@@ -18,6 +18,7 @@
 		1D8CBEFC245484E900824936 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D8CBEFB245484E900824936 /* Preview Assets.xcassets */; };
 		1D8CBEFF245484E900824936 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8CBEFD245484E900824936 /* LaunchScreen.storyboard */; };
 		1DCA822C2459FCB500D77E6B /* Bang, bell and fall.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1DCA822B2459FCB500D77E6B /* Bang, bell and fall.wav */; };
+		1DCA826E245A05B400D77E6B /* AppLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCA826D245A05B400D77E6B /* AppLogo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		1D8CBEFE245484E900824936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D8CBF00245484E900824936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DCA822B2459FCB500D77E6B /* Bang, bell and fall.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Bang, bell and fall.wav"; sourceTree = "<group>"; };
+		1DCA826D245A05B400D77E6B /* AppLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		1D8CBEF1245484E400824936 /* Pomodoro */ = {
 			isa = PBXGroup;
 			children = (
+				1DCA826C245A059900D77E6B /* Logo */,
 				1D5EB5D42459B7E500A85829 /* Helpers */,
 				1D8CBEF2245484E400824936 /* AppDelegate.swift */,
 				1D8CBEF4245484E400824936 /* SceneDelegate.swift */,
@@ -96,6 +99,14 @@
 				1D8CBEFB245484E900824936 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1DCA826C245A059900D77E6B /* Logo */ = {
+			isa = PBXGroup;
+			children = (
+				1DCA826D245A05B400D77E6B /* AppLogo.swift */,
+			);
+			path = Logo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +188,7 @@
 				1D5EB5D62459B7FC00A85829 /* PlaySound.swift in Sources */,
 				1D8CBEF5245484E400824936 /* SceneDelegate.swift in Sources */,
 				1D8CBEF7245484E400824936 /* ContentView.swift in Sources */,
+				1DCA826E245A05B400D77E6B /* AppLogo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
