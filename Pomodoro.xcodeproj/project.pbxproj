@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D5EB5D62459B7FC00A85829 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5EB5D52459B7FC00A85829 /* PlaySound.swift */; };
+		1D5EB5D82459DDC300A85829 /* Cartoon sound effects ping 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D5EB5D72459DDC300A85829 /* Cartoon sound effects ping 1.wav */; };
+		1D5EB5DA2459DE8700A85829 /* Comedy effect clang.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D5EB5D92459DE8700A85829 /* Comedy effect clang.wav */; };
+		1D5EB5DC2459DF6000A85829 /* Cartoon sound effects zip 4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1D5EB5DB2459DF6000A85829 /* Cartoon sound effects zip 4.wav */; };
 		1D8CBEF3245484E400824936 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8CBEF2245484E400824936 /* AppDelegate.swift */; };
 		1D8CBEF5245484E400824936 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8CBEF4245484E400824936 /* SceneDelegate.swift */; };
 		1D8CBEF7245484E400824936 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8CBEF6245484E400824936 /* ContentView.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D5EB5D52459B7FC00A85829 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
+		1D5EB5D72459DDC300A85829 /* Cartoon sound effects ping 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Cartoon sound effects ping 1.wav"; sourceTree = "<group>"; };
+		1D5EB5D92459DE8700A85829 /* Comedy effect clang.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Comedy effect clang.wav"; sourceTree = "<group>"; };
+		1D5EB5DB2459DF6000A85829 /* Cartoon sound effects zip 4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Cartoon sound effects zip 4.wav"; sourceTree = "<group>"; };
 		1D8CBEEF245484E400824936 /* Pomodoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pomodoro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D8CBEF2245484E400824936 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D8CBEF4245484E400824936 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D5EB5D42459B7E500A85829 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1D5EB5D52459B7FC00A85829 /* PlaySound.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		1D8CBEE6245484E400824936 = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +72,14 @@
 		1D8CBEF1245484E400824936 /* Pomodoro */ = {
 			isa = PBXGroup;
 			children = (
+				1D5EB5D42459B7E500A85829 /* Helpers */,
 				1D8CBEF2245484E400824936 /* AppDelegate.swift */,
 				1D8CBEF4245484E400824936 /* SceneDelegate.swift */,
 				1D8CBEF6245484E400824936 /* ContentView.swift */,
 				1D8CBEF8245484E900824936 /* Assets.xcassets */,
+				1D5EB5D72459DDC300A85829 /* Cartoon sound effects ping 1.wav */,
+				1D5EB5D92459DE8700A85829 /* Comedy effect clang.wav */,
+				1D5EB5DB2459DF6000A85829 /* Cartoon sound effects zip 4.wav */,
 				1D8CBEFD245484E900824936 /* LaunchScreen.storyboard */,
 				1D8CBF00245484E900824936 /* Info.plist */,
 				1D8CBEFA245484E900824936 /* Preview Content */,
@@ -133,9 +153,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D5EB5D82459DDC300A85829 /* Cartoon sound effects ping 1.wav in Resources */,
 				1D8CBEFF245484E900824936 /* LaunchScreen.storyboard in Resources */,
 				1D8CBEFC245484E900824936 /* Preview Assets.xcassets in Resources */,
+				1D5EB5DC2459DF6000A85829 /* Cartoon sound effects zip 4.wav in Resources */,
 				1D8CBEF9245484E900824936 /* Assets.xcassets in Resources */,
+				1D5EB5DA2459DE8700A85829 /* Comedy effect clang.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D8CBEF3245484E400824936 /* AppDelegate.swift in Sources */,
+				1D5EB5D62459B7FC00A85829 /* PlaySound.swift in Sources */,
 				1D8CBEF5245484E400824936 /* SceneDelegate.swift in Sources */,
 				1D8CBEF7245484E400824936 /* ContentView.swift in Sources */,
 			);

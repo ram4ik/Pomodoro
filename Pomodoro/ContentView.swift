@@ -10,11 +10,16 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State private var haptic = false
+    @State private var sound = false
+    
     @State private var progress: CGFloat = 0
     @State private var run = false
     
     var colors = [Color.white.opacity(0.4), Color.white.opacity(0.4)]
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    
+    let haptics = UINotificationFeedbackGenerator()
     
     var body: some View {
         ZStack {
@@ -67,6 +72,12 @@ struct ContentView: View {
                 
                 Button(action: {
                     self.run.toggle()
+                    if self.haptic {
+                        self.haptics.notificationOccurred(self.haptic ? .success : .warning)
+                    }
+                    if self.sound {
+                        playSound(sound: self.run ? "Cartoon sound effects ping 1" : "Cartoon sound effects zip 4", type: "wav")
+                    }
                 }) {
                     Text(self.run ? "Pause" : "Start")
                         .foregroundColor(Color.white.opacity(0.8))
@@ -82,7 +93,18 @@ struct ContentView: View {
                         .foregroundColor(Color.white.opacity(0.4))
                         .padding()
                         .contextMenu {
-                            Text("Settings")
+                            Button(action: {
+                                self.haptic.toggle()
+                            }) {
+                                Text("Haptic feedback")
+                                Image(systemName: self.haptic ? "checkmark.circle" : "xmark.circle")
+                            }
+                            Button(action: {
+                                self.sound.toggle()
+                            }) {
+                                Text("Sound feedback")
+                                Image(systemName: self.sound ? "checkmark.circle" : "xmark.circle")
+                            }
                         }
                     Spacer()
                     Image(systemName: "info.circle")
@@ -111,6 +133,8 @@ struct ContentView: View {
             }
             if self.progress == 200 {
                 self.progress = 0
+                playSound(sound: "Comedy effect clang", type: "wav")
+                haptics.notificationOccurred(.success)
             }
         }
     }
