@@ -17,6 +17,7 @@
 		1D8CBEF9245484E900824936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D8CBEF8245484E900824936 /* Assets.xcassets */; };
 		1D8CBEFC245484E900824936 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D8CBEFB245484E900824936 /* Preview Assets.xcassets */; };
 		1D8CBEFF245484E900824936 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8CBEFD245484E900824936 /* LaunchScreen.storyboard */; };
+		1DCA822C2459FCB500D77E6B /* Bang, bell and fall.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1DCA822B2459FCB500D77E6B /* Bang, bell and fall.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		1D8CBEFB245484E900824936 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1D8CBEFE245484E900824936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D8CBF00245484E900824936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DCA822B2459FCB500D77E6B /* Bang, bell and fall.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Bang, bell and fall.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				1D5EB5D72459DDC300A85829 /* Cartoon sound effects ping 1.wav */,
 				1D5EB5D92459DE8700A85829 /* Comedy effect clang.wav */,
 				1D5EB5DB2459DF6000A85829 /* Cartoon sound effects zip 4.wav */,
+				1DCA822B2459FCB500D77E6B /* Bang, bell and fall.wav */,
 				1D8CBEFD245484E900824936 /* LaunchScreen.storyboard */,
 				1D8CBF00245484E900824936 /* Info.plist */,
 				1D8CBEFA245484E900824936 /* Preview Content */,
@@ -155,6 +158,7 @@
 			files = (
 				1D5EB5D82459DDC300A85829 /* Cartoon sound effects ping 1.wav in Resources */,
 				1D8CBEFF245484E900824936 /* LaunchScreen.storyboard in Resources */,
+				1DCA822C2459FCB500D77E6B /* Bang, bell and fall.wav in Resources */,
 				1D8CBEFC245484E900824936 /* Preview Assets.xcassets in Resources */,
 				1D5EB5DC2459DF6000A85829 /* Cartoon sound effects zip 4.wav in Resources */,
 				1D8CBEF9245484E900824936 /* Assets.xcassets in Resources */,

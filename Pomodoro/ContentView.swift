@@ -166,6 +166,7 @@ struct ContentView: View {
                 if self.minutes == 0 {
                     self.run = false
                     self.minutes = 360.0
+                    playSound(sound: "Bang, bell and fall", type: "wav")
                 }
             }
             if self.progress == 200 {
