@@ -16,6 +16,8 @@ struct ContentView: View {
     @State private var progress: CGFloat = 0
     @State private var run = false
     
+    @State private var minutes = 360.0
+    
     var colors = [Color.white.opacity(0.4), Color.white.opacity(0.4)]
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
@@ -69,6 +71,30 @@ struct ContentView: View {
                         }
                     }
                 }
+                
+                VStack {
+                    ZStack(alignment: .leading) {
+                        Rectangle()
+                            .foregroundColor(.white)
+                            .opacity(0.1)
+                            .frame(width: 360, height: 4)
+                            .cornerRadius(4)
+
+                        LinearGradient(gradient: Gradient(colors: [Color.white.opacity(0.2), Color.white.opacity(0.3)]), startPoint: .top, endPoint: .bottom)
+                            .frame(width: CGFloat(minutes), height: 4)
+
+                    }
+                    HStack {
+                        Text("0")
+                        Spacer()
+                        Text("20 min")
+                    }
+                    .font(.system(size: 12))
+                    .foregroundColor(.white)
+                    .opacity(0.5)
+                    .frame(width: 360)
+                }
+                .padding(.top, 10)
                 
                 Button(action: {
                     self.run.toggle()
@@ -132,6 +158,8 @@ struct ContentView: View {
                 if self.progress != 200 {
                     self.progress += 1
                 }
+                
+                self.minutes -= 0.3
             }
             if self.progress == 200 {
                 self.progress = 0
