@@ -75,6 +75,25 @@ struct ContentView: View {
                 }.background(Capsule().stroke(LinearGradient(gradient: .init(colors: colors), startPoint: .leading, endPoint: .trailing), lineWidth: 2))
                 .padding(55)
             }
+            
+            VStack {
+                HStack {
+                    Image(systemName: "gear")
+                        .foregroundColor(Color.white.opacity(0.4))
+                        .padding()
+                        .contextMenu {
+                            Text("Settings")
+                        }
+                    Spacer()
+                    Image(systemName: "info.circle")
+                        .foregroundColor(Color.white.opacity(0.4))
+                        .padding()
+                        .contextMenu {
+                            Text("Pomodoro")
+                        }
+                }
+                Spacer()
+            }
         }.onReceive(timer, perform: updateTimer)
     }
     
